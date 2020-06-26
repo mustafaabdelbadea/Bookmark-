@@ -1,0 +1,50 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/styless.css" />
+</head>
+
+<body>
+    <header class="container  header">
+        <h3 class="my-4">Bookmarker</h3>
+        <hr>
+    </header>
+    <section class="container">
+        <div class="col-sm-12 ">
+            <div class="fav-sites p-5 text-center">
+                <h2 class="my-3">Bookmark your favorite sites</h2>
+                <p>Site Name</p>
+                <input type="text" class="form-control" id="siteName" placeholder="Bookmark Name">
+                <p class="mt-2  alert-danger w-75 mx-auto " id="nameReq"></p>
+                <p class="my-2">Site URL</p>
+                <input type="text" class="form-control" id="siteUrl" placeholder="Site URL">
+                <p class="mt-2  alert-danger w-75 mx-auto " id="urlReq"></p>
+
+                <button class="my-4 sub-btn btn btn-primary" id="sub-Btn">Submit</button>
+
+
+
+                <input type="text" onkeyup="search(this.value)" placeholder="Search by Url" class="form-control my-3"
+                    name="" id="search">
+            </div>
+        </div>
+    </section>
+    <section class="container">
+        <div class="col-sm-12" id="try">
+
+        </div>
+
+    </section>
+    <footer class="container my-3">
+        <hr>
+        <p class="mr-4">© 2019 Bookmarker Inc.</p>
+    </footer>
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
